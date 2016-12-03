@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.merek.tournamaker.GameActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TeamOne"
+        android:id="@+id/teamOneTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="69dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TeamTwo"
+        android:id="@+id/teamTwoTextView"
+        android:layout_alignTop="@+id/teamOneTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS"
+        android:id="@+id/vsTextView"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/teamTwoTextView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/abc_background_cache_hint_selector_material_dark" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamOneScore"
+        android:layout_below="@+id/vsTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/teamOneTextView"
+        android:layout_alignEnd="@+id/teamOneTextView"
+        tools:ignore="NewApi"
+        android:onClick="setTeamOneScore" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamTwoScore"
+        android:layout_below="@+id/vsTextView"
+        android:layout_alignRight="@+id/teamTwoTextView"
+        android:layout_alignEnd="@+id/teamTwoTextView"
+        android:layout_alignLeft="@+id/teamTwoTextView"
+        android:layout_alignStart="@+id/teamTwoTextView"
+        tools:ignore="NewApi"
+        android:onClick="setTeamTwoScore" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next game"
+        android:id="@+id/nextGameBtn"
+        android:onClick="nextGame"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/teamTwoScore"
+        android:layout_alignEnd="@+id/teamTwoScore" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Game"
+            android:id="@+id/gameTextView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="#"
+            android:id="@+id/gameNumberTextView"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:id="@+id/button6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="showHelp5" />
+
+
+</RelativeLayout>

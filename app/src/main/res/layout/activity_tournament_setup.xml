@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TournamentSetup"
+    android:padding="0dp"
+    android:gravity="fill"
+    android:id="@+id/tournamentSetupLinearLayout"
+    android:onClick="showHelp3">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:id="@+id/button4"
+        android:layout_gravity="right"
+        android:onClick="showHelp3" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tournament Setup"
+        android:id="@+id/textViewTourSet"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Setup your tournament"
+        android:id="@+id/tournamentSetupDescription"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14dp" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Select Teams"
+        android:id="@+id/buttonSelectTeams"
+        android:onClick="selectTeamsClick"
+        android:textSize="20dp"
+        android:layout_below="@+id/buttonSelectTeam"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Select teams to add to tournament"
+        android:id="@+id/selectTeamsDescription"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14dp" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Team Manager"
+        android:id="@+id/buttonTeamManager"
+        android:onClick="teamManagerClick"
+        android:textSize="20dp"
+        android:layout_below="@+id/buttonSelectTeams"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Create, edit or delete team"
+        android:id="@+id/teamManagerDescription"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14dp" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Start Tournament"
+        android:id="@+id/buttonStart"
+        android:onClick="startClick"
+        android:textSize="20dp"
+        android:layout_below="@+id/buttonTeamManager"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Start your tournament"
+        android:id="@+id/startTournamentDescription"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
